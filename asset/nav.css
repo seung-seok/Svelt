@@ -1,0 +1,26 @@
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+}
+#nav #nav_list{
+    font-size: 12px;
+    /* font-weight: bold; */
+}
+#nav #nav_list a{
+    text-decoration: none;
+    color: black;
+}
+#nav #nav_list p{
+    cursor: pointer;
+}
+#nav #nav_list p.active{
+    font-weight: bold;
+}
+#nav #nav_list p.acitve{
+    font-weight: bold;
+}
+#nav #nav_list a:hover{
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
