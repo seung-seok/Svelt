@@ -1,21 +1,17 @@
 <?php
 // 카테고리
-($_GET['cats'])?$cats = $_GET['cats']:$cats = '';
+($_GET['cats'])?$cats = $_GET['cats']:$cats = '01_00';
 
 // Setting URL
 $url = 'https://domeggook.com/ssl/api/';
 
 // Setting Request Parameters
 $data = array(
-    'ver'    => '4.0',
-    'mode'   => 'getItemList',
+    'ver'    => '4.1',
+    'mode'   => 'getPopularItemList',
     'aid'    => 'd83f03ffd532e0ba63a95106dc961f45', //5652a4d7a9b8b995e6f3545d189a2a85
-    'itemNo' => '',
-    'ca'     => $cats,
-    // 'ca'     => '03_00_00_00_00',
-    'market' => 'dome',
+    'cat'     => $cats,
     'om'     => 'json',
-    'so'     => 'ha', //rd, ha
     'sz'     => '100'
 );
 

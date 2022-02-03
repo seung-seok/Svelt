@@ -1,26 +1,40 @@
 #nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: blanchedalmond;
+    background-color: #F4F6F9;
+    border: 1px solid #dbd7d7;
 }
 #nav #nav_list{
     font-size: 12px;
-    /* font-weight: bold; */
+
 }
 #nav #nav_list a{
     text-decoration: none;
     color: black;
 }
-#nav #nav_list p{
+#nav_list p{
     cursor: pointer;
+    margin: 0;
+    padding: 12px 0;
 }
-#nav #nav_list p.active{
+#nav_list p.active{
     font-weight: bold;
-}
-#nav #nav_list p.acitve{
-    font-weight: bold;
+    border-bottom: 1px solid black;
 }
 #nav #nav_list a:hover{
     font-size: 14px;
     transition-duration: 0.2s;
+}
+
+#nav_sub {
+    display: flex;
+    justify-content: center;
+    background-color: #dadee3;
+}
+#nav_sub #nav_list{
+    font-size: 12px;
+    margin: 0 24px;
+}
+#nav_sub #nav_list p{
+    cursor: pointer;
 }
