@@ -30,5 +30,3 @@ $res = json_decode($response, true);
 
 $res = json_encode($res['domeggook']['list']['item'], JSON_PRETTY_PRINT);
 print_r($res);
-
-

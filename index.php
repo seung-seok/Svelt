@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도매꾹 인기100</title>
+    <!-- jQuery -->
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="/asset/ajax.js"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="/asset/default.css">
     <link rel="stylesheet" href="/asset/item.css">
     <link rel="stylesheet" href="/asset/nav.css">
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <section>
         <div id="nav" class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div id="nav_list" class="swiper-slide">
-                    <p onclick="get_itemlist('01_00')">전체</p>
+                    <p onclick="get_itemlist('01_00')" class="active">전체</p>
                 </div>
                 <div id="nav_list" class="swiper-slide">
                     <p onclick="get_itemlist('01_01')">패션잡화/화장품</p>
@@ -64,27 +64,21 @@
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 <script type="text/javascript">
+    // Click active
     var nav_list = document.querySelectorAll("#nav_list p");
-    
     [].forEach.call(nav_list, function(col){
         col.addEventListener("click", click, false);
     })
-    
     function click() {
-        // console.log(this);
         for(var list of nav_list){list.classList.remove('active');}
         this.className = 'active';
     }
-    function checkV(data){
-        console.log(data);
-    }    
 
     // Swiper JS
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 11,
+        slidesPerView: 'auto',
+        // spaceBetween: 11,
         freeMode: true,
       });
 </script>

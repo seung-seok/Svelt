@@ -36,6 +36,7 @@
       }
 
       .swiper-slide {
+        width: 300px;
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -82,7 +83,7 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         freeMode: true,
         pagination: {

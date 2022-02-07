@@ -1,8 +1,10 @@
+/* nav CSS */
 #nav {
     display: flex;
     justify-content: space-evenly;
     background-color: #F4F6F9;
     border: 1px solid #dbd7d7;
+    color: #5E5E5E;
 }
 #nav #nav_list{
     font-size: 12px;
@@ -25,11 +27,12 @@
     font-size: 14px;
     transition-duration: 0.2s;
 }
-
+/* nav_sub CSS */
 #nav_sub {
     display: flex;
     justify-content: center;
     background-color: #dadee3;
+    color: #5E5E5E;
 }
 #nav_sub #nav_list{
     font-size: 12px;
