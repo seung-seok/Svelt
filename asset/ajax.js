@@ -24,7 +24,8 @@ function get_itemlist(cats=''){
 }
 
 function create_element(data){
-    var layout = document.querySelector('#item_list');
+    // var layout = document.querySelector('#item_list');
+    var layout = $('#item_list')[0];
     $('#item_list').empty();
     data.forEach(el => {
         var rank_class = '';
